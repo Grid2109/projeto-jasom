@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', sans-serif;
+    color: #fff;
+}
+
+html {
+    background: #060608;
+}
+
+ul {
+    list-style: none;
+}
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 15px;
+  
+}
+
+header nav {
+    display: flex;
+    gap: 26px;
+}
+
+header nav a {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.s-principal {
+    width: 100%;
+    background-image: url("img/background\ Jason.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center ;
+    background-attachment: fixed; /*fixa o background mesmo que a página role*/
+    height: 900px;
+    position: relative;
+}
+
+.s-principal .container-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    max-width: 1246px;
+    margin: 0 auto;
+    padding-top: 195px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.s-principal .container-principal .content-informations{
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+    width: 100%;
+}
+
+
+.s-principal .container-principal h1 {
+ color: #FAFF01;
+ font-family: Alfa Slab One;
+ font-size: 49px;
+ font-style: normal;
+ font-weight: 400;
+ text-transform: uppercase;
+}
+
+.s-principal .container-principal p {
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 22px;
+ margin: 0 auto;
+ 
+}
+
+.s-principal .container-principal h4 {
+    font-family: Anton;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.s-principal .container-principal .container-btns {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.s-principal .container-principal .container-btns .btn-1{
+    background: #4371E6;
+}
+
+.s-principal .container-principal .container-btns .btn-1:hover {
+    opacity: 0.9; /* Quando o mouse passa sobre o botão, a opacidade é restaurada para 1 */
+}
+
+
+.s-principal .container-principal .container-btns .btn-2 {
+    background-color: transparent;
+    border: 1px solid #4371E6;
+    transition: background-color .5s ease;
+}
+
+.s-principal .container-principal .container-btns .btn-2:hover {
+  background-color: #4371E6;
+}
+
+.s-sobre {
+    width: 100%;
+    height: 900px;
+    background-image: url("img/background-body-section2.png");
+    background-repeat: no-repeat;
+    background-position: center center; /*centraliza no eixo x e y*/
+    background-size: cover;
+    background-attachment: fixed; /*fixa o background mesmo que a página role*/
+    position: relative;
+}
+
+.s-sobre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade */
+    z-index: 1; /* Garante que o pseudo-elemento esteja acima da imagem */
+}
+
+.s-sobre h2 {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 26px;
+    padding-left: 23px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.s-sobre .container-sobre {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    max-width: 1246px;
+    padding: 280px 15px;
+}
+
+
+.s-sobre .container-sobre .container-jasom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 780px;
+    border-radius: 10px;
+    background: #1C1D1E;  
+    position: relative;
+    z-index: 2;
+}
+
+
+.s-sobre .container-sobre .container-jasom h3 {
+    color: #FAFF01;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 21px;
+    margin-left: 28px;
+    
+}
+
+.s-sobre .container-sobre .container-jasom p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 28px;
+    margin-bottom: 30px;
+    max-width: 680px;
+    width: 100%;
+}
+
+.s-sobre .container-sobre .img-jasom {
+    max-width: 100%;
+    height: 90%;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+}
+
+.s-sinopse {
+
+        width: 100%;
+        height: 900px;
+        background-image: url("img/background-section3.png");
+        background-repeat: no-repeat;
+        background-position: center center; /*centraliza no eixo x e y*/
+        background-size: cover;
+        background-attachment: fixed; /*fixa o background mesmo que a página role*/
+        position: relative;
+        overflow: hidden;
+}
+
+.s-sinopse::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade */
+    z-index: 1; /* Garante que o pseudo-elemento esteja acima da imagem */
+}
+
+.s-sinopse .container-sinopse {
+  display: flex;
+  width: 100%;
+  max-width: 1246px;
+  padding-top: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.s-sinopse .container-sinopse .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+   
+}
+
+
+.s-sinopse .container-sinopse .left h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+  
+}
+
+.s-sinopse .container-sinopse .left img {
+    max-width: 417px;
+    width: 100%;
+}
+
+
+.s-sinopse .container-sinopse .right {
+   width: 60%;
+   max-width: 1309px;
+   padding-top: 90px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.s-sinopse .container-sinopse .right p {
+    font-family: Anton;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 49px;
+}
+
+.s-sinopse .container-sinopse .right h4 {
+    
+   font-family: Anton;
+   font-size: 25px;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+}
+
+.s-sinopse .thumbs {
+    margin-top: 49px;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.s-sinopse .thumbs img {
+    max-width: 210px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid transparent; /* Adiciona uma borda transparente no estado normal */
+    transition: border-color 0.3s ease; /* Adiciona transição suave para a borda no hover */
+    transition: transform 0.4s ease-in-out, box-shadow 0.5s ease;
+}
+
+.s-sinopse .thumbs img:hover {
+    border: 1px solid #4371E6;
+    transform: scale(1.1); /* Aumenta o tamanho para 110% */
+    box-shadow: 0 0 15px rgba(152, 146, 146, 0.5); 
+}
+
+/*RESPONSIVO*/
+
+/*laptop - até 1200*/
+@media(max-width: 1200px) {
+    .s-principal .container-principal {
+     padding-bottom: 70px;
+    }
+
+    .s-sobre .container-sobre {
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
+
+    .s-sobre .container-sobre .container-jasom {
+        width: 40%;
+    }
+
+    .s-sobre .container-sobre .container-jasom p {
+        width: 85%;
+    }
+
+    .s-sobre .container-sobre .img-jasom {
+       height: 73%;
+    }
+
+    .s-sinopse .container-sinopse {
+        padding-top: 70px;
+    }
+
+
+    .s-sinopse .container-sinopse .right{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s-sinopse .thumbs {
+        width: 100%;
+        justify-content: right;
+    }
+
+    .s-sinopse .thumbs img {
+        max-width: 180px;
+        width: 100%;
+    }
+}
+
+/*tablet - até 991px*/
+@media(max-width: 991px) {
+   .s-sinopse {
+    height: auto;
+   }
+
+    .s-sinopse .container-sinopse {
+       flex-direction: column;
+       gap: 25px;
+       height: auto;
+    }
+
+    .s-sinopse .container-sinopse .left {
+        width: 100%;
+    }
+
+    .s-sinopse .container-sinopse .right{
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 15px;
+        text-align: justify;
+    }
+
+    .s-sinopse .thumbs {
+      justify-content: center;
+      align-items: center;
+      padding-left: 35px;
+      padding-bottom: 20px;
+      gap: 20px;
+    }
+
+    .s-sinopse .thumbs img{
+        width: 100%;
+        max-width: 210px;
+        width: 100%;
+    }
+}
+
+/*mobile - até 560px*/
+@media(max-width: 560px){
+
+    header .logo {
+     display: none;
+    }
+   
+    header nav a {
+        font-size: 16px;
+    }
+
+    .s-principal{
+     background-position-x: 62%;
+    }
+
+
+    .s-principal .container-principal h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .s-principal .container-principal h4 {
+        font-size: 25px;
+    }
+
+    .s-principal .container-principal .container-btns {
+        gap: 30px;
+    }
+
+    button {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+
+    .s-sobre {
+        background-position-x: 62%;
+    }
+
+    .s-sobre h2 {
+        font-size: 24px;
+    }
+
+    .s-sobre .container-sobre .container-jasom{
+        width: auto;
+    }
+
+    .s-sobre .container-sobre .img-jasom {
+        opacity: 0.3;
+     }
+
+     .s-sinopse .container-sinopse .left h3 {
+        font-size: 23px;
+     }
+
+     .s-sinopse .thumbs {
+        flex-direction: column;
+        padding: 0 0 15px 0;
+     }
+}
