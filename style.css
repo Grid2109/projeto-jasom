@@ -359,6 +359,11 @@ header nav a {
 
     .s-sinopse .container-sinopse {
         padding-top: 70px;
+        padding-left: 0;
+    }
+
+    .s-sinopse .container-sinopse .left {
+        padding-left: 15px;
     }
 
 
@@ -406,9 +411,7 @@ header nav a {
     .s-sinopse .thumbs {
       justify-content: center;
       align-items: center;
-      padding-left: 35px;
       padding-bottom: 20px;
-      gap: 20px;
     }
 
     .s-sinopse .thumbs img{
@@ -474,6 +477,6 @@ header nav a {
 
      .s-sinopse .thumbs {
         flex-direction: column;
-        padding: 0 0 15px 0;
+      
      }
 }
