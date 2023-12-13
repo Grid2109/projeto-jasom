@@ -491,6 +491,10 @@ iframe {
         font-size: 18px;
     }
 
+    #youtubeIframe{
+        width: 90%;
+    }
+
     .s-sobre {
         background-position-x: 62%;
     }
@@ -534,6 +538,11 @@ iframe {
     button {
         padding: 10px 20px;
         font-size: 16px;
+    }
+
+    #youtubeIframe{
+        width: 90%;
+        height: 300px;
     }
 
     .s-sobre h2 {
