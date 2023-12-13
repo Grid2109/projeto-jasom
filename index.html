@@ -10,7 +10,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Projeto-Jasom</title>
+   
   </head>
   <body>
     <section class="s-principal">
@@ -18,33 +20,38 @@
         <div class="container">
           <img src="img/LOGO MATASON.png" class="logo" alt="Logo Matason" />
           <nav>
-            
-              <a href="">Tela inicial</a>
-              <a href="">Filmes</a>
-              <a href="">Séries</a>
-              <a href="">Animes</a>
-         
+            <a href="">Tela inicial</a>
+            <a href="">Filmes</a>
+            <a href="">Séries</a>
+            <a href="">Animes</a>
           </nav>
         </div>
       </header>
       <div class="container-principal">
         <div class="content-informations">
-        <h1>Sexta-feira 13</h1>
-        <p>
-          Em 1958, um casal de adolescentes foge de um acampamento para passar
-          uma noite romântica juntos, mas os dois são perseguidos por um
-          assassino e mortos a facadas. Em 1979, os dirigentes do acampamento
-          Crystal Lake decidem reabrir o local, apesar do trauma que ainda marca
-          a cidade.
-        </p>
-        <h4>1980 | TERROR - HORROR | 1h 35m</h4>
+          <h1>Sexta-feira 13</h1>
+          <p>
+            Em 1958, um casal de adolescentes foge de um acampamento para passar
+            uma noite romântica juntos, mas os dois são perseguidos por um
+            assassino e mortos a facadas. Em 1979, os dirigentes do acampamento
+            Crystal Lake decidem reabrir o local, apesar do trauma que ainda
+            marca a cidade.
+          </p>
+          <h4>1980 | TERROR - HORROR | 1h 35m</h4>
 
-        <div class="container-btns">
-          <button class="btn-1">Assista</button>
-          <button class="btn-2">Trailer</button>
+          <div class="container-btns">
+            <button class="btn-1">Assista</button>
+            <button class="btn-2">
+              <a href="#" id="openModal">Trailer</a>
+            </button>
+          </div>
+
+          <div id="modalContainer">
+    
+            <iframe id="youtubeIframe" width="75%" height="500" src="https://www.youtube.com/embed/6gg4jSxMdYM?si=QQWS_nHjI9qTxXZr"  frameborder="0" allowfullscreen></iframe>
+           
+           </div>
         </div>
-        </div>
-        
       </div>
     </section>
 
@@ -85,14 +92,12 @@
           </p>
           <h4>Imagens</h4>
           <div class="thumbs">
-            <img src="img/IMAGEM 1 1.png" alt="">
-            <img src="img/IMAGEM 2 1.png" alt="">
-            <img src="img/IMAGEM 3 1.png" alt="">
+            <img src="img/IMAGEM 1 1.png" alt="" />
+            <img src="img/IMAGEM 2 1.png" alt="" />
+            <img src="img/IMAGEM 3 1.png" alt="" />
           </div>
-          
         </div>
       </div>
     </section>
- 
   </body>
 </html>

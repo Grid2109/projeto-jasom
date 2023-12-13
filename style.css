@@ -16,6 +16,8 @@ ul {
   
   a {
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
   }
   
   img {
@@ -129,6 +131,40 @@ header nav a {
 
 .s-principal .container-principal .container-btns .btn-1:hover {
     opacity: 0.9; /* Quando o mouse passa sobre o botão, a opacidade é restaurada para 1 */
+}
+
+#modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background: rgba(0, 0, 0, 0.70);
+    left: 0;
+    top: 0;
+    animation: fadeIn 0.8s;
+}
+
+
+iframe {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 5px solid #FFF;
+    border-radius: 10px;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -451,7 +487,7 @@ header nav a {
     }
 
     button {
-        padding: 15px 40px;
+        padding: 15px 37px;
         font-size: 18px;
     }
 
@@ -478,5 +514,33 @@ header nav a {
      .s-sinopse .thumbs {
         flex-direction: column;
       
+     }
+}
+
+@media(max-width: 320px) {
+    header nav a {
+        font-size: 14px;
+    }
+
+    .s-principal .container-principal h1{
+        font-size: 30px;
+       
+    }
+    
+    .s-principal .container-principal .container-btns {
+        gap: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .s-sobre h2 {
+        font-size: 20px;
+    }
+
+    .s-sinopse .container-sinopse .left h3 {
+        font-size: 18px;
      }
 }
